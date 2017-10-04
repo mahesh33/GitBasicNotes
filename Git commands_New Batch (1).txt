@@ -1,0 +1,101 @@
+Git Architecture
+
+It does not override each other's code.
+Develepers can simultaneously work on project.
+It maintain history or version of each project
+
+Version Control System: It is a software that allows developers to work
+
+Git:
+
+Branch: It is a seperate line of develeopment so that each other's code does not get overridden.
+        One repo can have any number of branch.  
+git checkout - b "";
+
+Remote:-> Web
+
+Local:-> Hard drive
+
+1) Clone:
+
+2) change
+
+3)
+
+*) Create a new branch : For a separate line of development so that your code doesnot  
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ Working Directory ]
+ (Local):
+
+ --> Changes that you make in eclipse gets saved in this area 
+ --> Staging Area(committed changes gets saved in this area.Local Area)  
+ --> Online Git Repository.
+
+	-> If we only want to get/download something from remote repository then just do : git Clone : no need to do other then this.
+	-> If we gonna change something on that project or something then follow the following steps :
+
+ 1) git Clone -- > to get the code form the repository
+	-> i.e git clone "repositiry address"
+
+ 2) git status  --> To view the changes made in the working dirctory4 -> not need much
+
+ 3) git add  ---> to add the changes made in working directory to local repository.
+
+ *) git status: --> to see the changes. 
+
+ 4) git commit  --> To save and commit the changes to move to remote repository.Saving all changes to staging area, so that thet are ready for pushing 
+                 to remote repository
+        Syntax: git commi -m "write something".
+
+ git pull  --> Brings the latest version version from remote rep to local rep(Not working).
+           ---> 
+
+ git checkout -b "Arjun"  --> creating a new branch(local branch)
+
+ git checkout "Branchname"   --> for poiting to specific branch.
+
+ git diff   --> to see changes between local and working directory.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ To push your existing java project to Remote git Rep.
+
+ 1) Create a new repository in git by clicking on New repository.(Give any name and unselect  ADD Reame.Md checkbox)
+
+ 2) Now go to your local java project which you want to push to remote and git bash inside the project folder.
+
+ 3) Now type : git init : in the command window which creates a local branch poiting to master.
+
+ 4) now type : git add . : to add the all files in the project to local repository
+
+ 5) Now type git : commit -m "Commit message" : to commit the changes to local Repository.
+
+ 6) Set the destination url where you want to push the project using below command
+    git remote add origin https://github.com/ArjunBollam/FirstGitProject_Arjun.git
+
+ 7)  Set upstream as master branch for pushing the code using below command
+
+     git push --set-upstream origin master
+
+ 8) Now push the chnages using below command
+    git push
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*) git branch:
+*) git branch - a;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# For creating a local repository:
+--> git init.
+
+*) Establishing a link to the remote repository:
+--> git remote add origin
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
